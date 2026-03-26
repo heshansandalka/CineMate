@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMate | TV Shows</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Cine<span>Mate</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html" class="active">TV Shows</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+        </ul>
+        <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="tvSearch" placeholder="Search TV series...">
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: linear-gradient(rgba(5, 7, 10, 0.8), rgba(5, 7, 10, 0.8)), url('https://images.unsplash.com/photo-1593784991095-a205039470b6?auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <div class="hero-badge" style="background: var(--accent-solid, #f7a824); color: #000; padding: 4px 12px; border-radius: 4px; display: inline-block; font-size: 0.7rem; font-weight: 800; margin-bottom: 15px; letter-spacing: 1px;">CINEMATE ORIGINALS</div>
+            <h1>Binge-Worth <span>TV Series</span></h1>
+            <p>Discover the next big thing. From gripping crime dramas to light-hearted comedies, we've curated the best for you.</p>
+            <div class="hero-actions">
+                <button class="play-btn" style="background: #f7a824; color: #000;"><i class="fa-solid fa-play"></i> Start Watching</button>
+                <button class="info-btn"><i class="fa-solid fa-plus"></i> Add to List</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-container" style="padding: 0 4%; margin-bottom: 30px;">
+            <button class="pill active" data-genre="all">All Shows</button>
+            <button class="pill" data-genre="Crime">Crime</button>
+            <button class="pill" data-genre="Drama">Drama</button>
+            <button class="pill" data-genre="Action">Action</button>
+            
+            <div class="year-filter" style="margin-left: auto;">
+                <select id="yearSelect" style="background: #111; color: #fff; border: 1px solid #333; padding: 8px 15px; border-radius: 6px;">
+                    <option value="all">Release Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="movie-grid" id="tvGrid">
+            <div class="movie-card" data-genre="Crime" data-year="2008">
+                <div class="card-thumb">
+                    <img src="https://image.tmdb.org/t/p/w500/ggm8bb149T6Y9wjCcHG17Sgnr2J.jpg" alt="Breaking Bad">
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h4>Breaking Bad</h4>
+                    <div class="meta-row"><span>2008–2013</span><span>Crime</span></div>
+                    <div class="card-rating-pill">⭐ 9.5</div>
+                </div>
+            </div>
+
+            <div class="movie-card" data-genre="Action" data-year="2023">
+                <div class="card-thumb">
+                    <img src="https://image.tmdb.org/t/p/w500/uKvH5j9neYuS82uYjzbOTnoo1o9.jpg" alt="The Last of Us">
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h4>The Last of Us</h4>
+                    <div class="meta-row"><span>2023</span><span>Action</span></div>
+                    <div class="card-rating-pill">⭐ 8.8</div>
+                </div>
+            </div>
+
+            <div class="movie-card" data-genre="Drama" data-year="2017">
+                <div class="card-thumb">
+                    <img src="https://image.tmdb.org/t/p/w500/apbrVmU81Ovevx4S9mFsD62pk0.jpg" alt="Dark">
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h4>Dark</h4>
+                    <div class="meta-row"><span>2017–2020</span><span>Drama</span></div>
+                    <div class="card-rating-pill">⭐ 8.7</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo">Cine<span>Mate</span></div>
+            <p>Enjoy the best movies and TV shows from around the world. Your personal entertainment hub built with passion by Heshan.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links-group">
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tv-shows.html">TV Shows</a></li>
+                    <li><a href="favourites.html">Favourites</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 CineMate | All Rights Reserved</p>
+        <div class="creator-badge">Designed by <span>Heshan</span></div>
+    </div>
+</footer>
+</body>
+</html>
+   
+</body>
+</html>

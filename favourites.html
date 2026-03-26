@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMate | My Favourites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* empty message එකක් පෙන්වීමට අවශ්‍ය style එකක් */
+        .empty-message {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 50px;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Cine<span>Mate</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="favourites.html" class="active">Favourites</a></li>
+        </ul>
+        <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search..." id="navSearchInput">
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header" style="margin-top: 40px; margin-bottom: 30px;">
+            <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 10px;">♥ My <span>Favourites</span></h1>
+            <p style="color: var(--text-dim); margin-bottom: 30px;">Your saved movies and TV shows. Stored in your browser using localStorage.</p>
+            <hr class="hero-divider" style="width: 100%; margin: 20px 0; opacity: 0.1;">
+        </header>
+
+        <div class="movie-grid" id="favouritesGrid">
+            </div>
+
+        <div class="action-bar" style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
+            <button class="clear-btn btn-secondary" id="clearAllBtn">
+                <i class="fa-regular fa-trash-can"></i> Clear All Favourites
+            </button>
+        </div>
+
+    </main>
+
+   <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo">Cine<span>Mate</span></div>
+            <p>Enjoy the best movies and TV shows from around the world. Your personal entertainment hub built with passion by Heshan.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links-group">
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tv-shows.html">TV Shows</a></li>
+                    <li><a href="favourites.html">Favourites</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 CineMate | All Rights Reserved</p>
+        <div class="creator-badge">Designed by <span>Heshan</span></div>
+    </div>
+</footer>
+</body>
+</html>
+
+    
+</body>
+</html>
